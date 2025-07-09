@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Aparatur Desa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-4" style="max-width: 375px;">
+  <h5 class="fw-bold mb-3">📘 Data Aparatur Desa</h5>
+  <h6 class="text-secondary mb-3">👥 Daftar Aparatur & Perangkat</h6>
+
+  <!-- Daftar Aparatur -->
+  <div class="card p-3 mb-4" id="aparaturList">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <div><strong>👨‍💼 Budi Santoso</strong></div>
+        <div class="text-muted small">Kepala Desa</div>
+      </div>
+      <div class="text-end">
+        <div>📱 Mobile</div>
+        <span class="badge bg-success">Online</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Tambah -->
+  <h6 class="text-secondary mb-2">➕ Tambah Aparatur</h6>
+  <div class="card p-3">
+    <form id="form-aparatur" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label class="form-label">Nama Aparatur</label>
+        <div class="input-group">
+          <span class="input-group-text">👤</span>
+          <input type="text" class="form-control" id="nama" placeholder="Contoh: Budi Santoso" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Jabatan</label>
+        <div class="input-group">
+          <span class="input-group-text">📄</span>
+          <input type="text" class="form-control" id="jabatan" placeholder="Contoh: Kepala Desa" required>
+        </div>
+      </div>
+      <input type="hidden" id="perangkat">
+      <button type="submit" class="btn btn-primary w-100">Simpan Aparatur</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
