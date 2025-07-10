@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat Pengaduan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-3">
+    <!-- Header -->
+    <div class="text-center mb-3">
+      <h5 class="fw-bold text-primary">Pengaduan client</h5>
+      <p class="small text-muted">Feedback client</p>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="card shadow-sm mb-3">
+      <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+        <!-- Warga Message -->
+        <div class="d-flex mb-2">
+          <div class="bg-white border rounded p-2">
+            <div class="small text-muted">Warga · 10 Juli 2025 - 09:30</div>
+            Lampu jalan depan balai desa mati.
+          </div>
+        </div>
+
+        <!-- Admin Reply -->
+        <div class="d-flex justify-content-end mb-2">
+          <div class="bg-primary text-white rounded p-2">
+            <div class="small text-light">Admin · 10 Juli 2025 - 10:00</div>
+            Terima kasih, akan segera diperbaiki.
+          </div>
+        </div>
+
+        <!-- Warga -->
+        <div class="d-flex mb-2">
+          <div class="bg-white border rounded p-2">
+            <div class="small text-muted">Warga · 11 Juli 2025 - 08:15</div>
+            Sampah RT 04 belum diangkut 3 hari.
+          </div>
+        </div>
+
+        <!-- Admin -->
+        <div class="d-flex justify-content-end mb-2">
+          <div class="bg-primary text-white rounded p-2">
+            <div class="small text-light">Admin · 11 Juli 2025 - 08:45</div>
+            Sudah dijadwalkan hari ini. Terima kasih.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Ketik pengaduan...">
+            <button class="btn btn-sm btn-primary" type="submit">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
